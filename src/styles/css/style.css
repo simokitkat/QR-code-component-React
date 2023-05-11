@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  animation-name: bg-changing;
+  animation-duration: 3s;
+}
+
+main {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  height: 497px;
+  padding: 16px 16px 40px 16px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+  border-radius: 20px;
+  animation-name: card-flipping;
+  animation-duration: 2s;
+}
+.card img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+.card h1 {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  margin: 24px 0 16px;
+}
+.card p {
+  width: 256px;
+  margin: auto;
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1875px;
+}
+
+@keyframes card-flipping {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes bg-changing {
+  from {
+    background-color: hsl(218, 44%, 22%);
+  }
+  to {
+    background-color: hsl(212, 45%, 89%);
+  }
+}
+@media (max-width: 567px) {
+  main {
+    height: 667px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

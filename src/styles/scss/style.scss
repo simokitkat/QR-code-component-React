@@ -1,0 +1,85 @@
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: $Light-gray;
+    animation-name: bg-changing;
+    animation-duration: 3s;
+}
+
+main{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 320px;
+    height: 497px;
+    padding: 16px 16px 40px 16px;
+    background-color: $White;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    border-radius: 20px;
+    animation-name: card-flipping;
+    animation-duration: 2s;
+
+    img{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h1{
+        color: $Dark-blue;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        margin: 24px 0 16px;
+    }
+
+    p{
+        width: 256px;
+        margin: auto;
+        color: $Grayish-blue;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1875px;
+    }
+}
+
+@keyframes card-flipping {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes bg-changing {
+    from{
+        background-color: $Dark-blue;
+    }
+    to{
+        background-color: $Light-gray;
+    }
+}
+
+@media(max-width:567px){
+    main{
+        height: 667px;
+    }
+}
