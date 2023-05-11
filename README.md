@@ -21,8 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://github.com/simokitkat/QR-code-component-React)
+- Live Site URL: [Frontend Mentor | QR code component](https://simokitkat.github.io/QR-code-component-React)
 
 ## My process
 
